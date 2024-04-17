@@ -6,7 +6,8 @@
 html {
     width: 100%;
     height: 100%;
-    background: linear-gradient(325deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%);
+    background-image: url("descarga.jpg");
+    background-size: cover;
     font-family: Fredoka;
 }
 
@@ -49,9 +50,8 @@ button {
 
 .board,
 .win {
-    border-radius: 5px;
-    box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
-    background: linear-gradient(135deg,  #6f00fc 0%,#fc7900 50%,#fcc700 100%);
+    border: 10px solid;
+    background-color: #1900ff;
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
@@ -81,10 +81,10 @@ button {
 .card-front,
 .card-back {
     position: absolute;
-    border-radius: 5px;
     width: 100%;
     height: 100%;
-    background: #282A3A;
+    background-image: url("backcard.png");
+    background-size: cover;
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
@@ -107,13 +107,15 @@ button {
 }
 
 .win {
+    background-image: url("win.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: #FDF8E6;
     transform: rotateY(180deg) rotateZ(50deg);
 }
 
